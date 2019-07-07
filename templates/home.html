@@ -2,5 +2,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Homepage</h1>
+
+<h1>All Quotes</h1>
+<ul>
+    {% for quote in all_quotes_list %}
+        <li><b>Quote: {{ quote }}</b></li>
+        <li>Author: {{ quote.author }}</li>
+        <li>Tags: {{ quote.tags }}</li>
+        <li>Text: {{ quote.text }}</li>
+        ----------------------------------------------------------
+    {% endfor %}
+</ul>
+
+
 {% endblock content %}
