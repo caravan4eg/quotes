@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-# TODO: Creating a new Scrapy project
-# TODO: Writing a spider to crawl a site and extract data
-# TODO: Exporting the scraped data using the command line
-# TODO: Changing spider to recursively follow links
-# TODO: Using spider arguments
-
 import scrapy
 from scrapy_project.items import QuoteItem
 
