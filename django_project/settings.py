@@ -1,3 +1,5 @@
+from __future__ import absolute_import, unicode_literals
+
 """
 Django settings for django_project project.
 
@@ -144,12 +146,12 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 
-CACHES = {
-    'default': {
-        'BACKEND': 'redis_cache.RedisCache',
-        'LOCATION': '/var/run/redis/redis.sock',
-    },
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'redis_cache.RedisCache',
+#         'LOCATION': '/var/run/redis/redis.sock',
+#     },
+# }
 CELERY_WORKER_MAX_TASKS_PER_CHILD=1
 
 
